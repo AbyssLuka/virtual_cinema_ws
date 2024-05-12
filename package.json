@@ -4,9 +4,7 @@
   "description": "My webpack project",
   "main": "src/main.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "webpack serve --mode development --open",
-    "serve-ts-node": "node --loader ts-node/esm ./src/main.ts",
     "serve-dev": "webpack-dev-server",
     "build": "webpack --mode=development --node-env=development && node ./dist/index.js",
     "build:dev": "webpack --mode=development",
