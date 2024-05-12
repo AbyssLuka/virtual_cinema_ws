@@ -1,7 +1,7 @@
 {
   "name": "virtual_cinema_ws",
   "version": "1.0.0",
-  "description": "My webpack project",
+  "description": "websocket",
   "main": "src/main.ts",
   "scripts": {
     "serve": "webpack serve --mode development --open",
@@ -13,7 +13,7 @@
   },
   "type": "commonjs",
   "keywords": [],
-  "author": "",
+  "author": "Luka",
   "license": "ISC",
   "dependencies": {
     "alias": "^0.0.5",
