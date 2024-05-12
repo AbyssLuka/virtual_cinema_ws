@@ -202,11 +202,10 @@ wsRoute.post("/exitRoom", async (req: Request, res: Response) => {
     //清除玩家数据
     if (getRoom(body.roomId)) {
         getRoom(body.roomId).exitRoom(body.userId);
-        const keys = Object.keys(getRoom(body.roomId).playerList);
-        if (keys.length === 0) {
-            // delete roomMap[data.roomId];
-            delRoom(body.roomId)
-        }
+        // const keys = Object.keys(getRoom(body.roomId).playerList);
+        // if (keys.length === 0) {
+        //     delRoom(body.roomId)
+        // }
     }
     //给所有玩家广播
     playerExitFunc(body.roomId, body.userId);
